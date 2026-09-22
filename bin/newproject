@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+# Create a new research entry in _projects/ with front matter already filled in.
+#   ./bin/newproject "Neural Decoding of Reach Intent"
+set -euo pipefail
+
+if [ $# -lt 1 ]; then
+  echo "usage: $0 \"Project Title\"" >&2
+  exit 1
+fi
+
+title="$1"
+root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+slug="$(printf '%s' "$title" \
+  | tr '[:upper:]' '[:lower:]' \
+  | sed -e 's/[^a-z0-9]/-/g' -e 's/--*/-/g' -e 's/^-//' -e 's/-$//')"
+
+if [ -z "$slug" ]; then
+  echo "error: title produced an empty slug" >&2
+  exit 1
+fi
+
+file="$root/_projects/$slug.md"
+
+if [ -e "$file" ]; then
+  echo "error: $file already exists" >&2
+  exit 1
+fi
+
+mkdir -p "$root/_projects"
+next_order=$(( $(ls -1 "$root/_projects" 2>/dev/null | grep -c '\.md$') + 1 ))
+
+cat > "$file" <<EOF
+---
+title: "$title"
+order: $next_order
+description: "One or two sentences — the teaser shown on the Research card."
+thumbnail: /assets/img/thumb-1.svg
+# post: the-slug-of-a-post-in-_posts   # optional, adds a "Blog Post" link
+# links:
+#   publication: "https://doi.org/..."
+#   github: "https://github.com/rythdg/..."
+---
+EOF
+
+echo "$file"

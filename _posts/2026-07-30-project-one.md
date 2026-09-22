@@ -4,9 +4,6 @@ date: 2026-07-30
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip."
 thumbnail: /assets/img/thumb-1.svg
 tags: [placeholder]
-links:
-  publication: "#"
-  github: "#"
 references:
   - text: "Smith, J. & Doe, A. (2024). A Made-Up Paper Title for Demonstration Purposes. Journal of Placeholder Studies, 12(3), 45–67."
     url: "#"

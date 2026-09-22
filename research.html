@@ -6,7 +6,8 @@ permalink: /research/
 <p>An overview of ongoing and past research projects, with links to writeups, publications, and code where available.</p>
 
 <div id="research-list">
-  {%- for post in site.posts %}
-  {%- include project-card.html post=post mode="research" %}
+  {%- assign projects = site.projects | sort: "order" %}
+  {%- for project in projects %}
+  {%- include research-card.html project=project %}
   {%- endfor %}
 </div>

@@ -1,0 +1,31 @@
+{%- comment -%}
+One card on /research/. Params: project — a document from site.projects.
+The "Blog Post" link appears only when the project's `post:` slug resolves to
+a real post in _posts/, so a project with no writeup yet just shows fewer links.
+Markup must stay in sync with the .research-block rules in css/style.css.
+{%- endcomment -%}
+{%- assign linked_post = nil -%}
+{%- if include.project.post -%}
+  {%- assign linked_post = site.posts | where: "slug", include.project.post | first -%}
+{%- endif -%}
+<section class="research-block">
+  <img class="block-thumb" src="{{ include.project.thumbnail | relative_url }}" alt="">
+  <div class="block-content">
+    <h2>{{ include.project.title }}</h2>
+    <p>{{ include.project.description }}</p>
+  </div>
+  <div class="block-links">
+    {%- if linked_post %}
+    <a href="{{ linked_post.url | relative_url }}?from=research" target="_blank" rel="noopener">Blog Post</a>
+    {%- endif %}
+    {%- if include.project.links.publication %}
+    <a href="{{ include.project.links.publication }}" target="_blank" rel="noopener">Publication</a>
+    {%- endif %}
+    {%- if include.project.links.github %}
+    <a href="{{ include.project.links.github }}" target="_blank" rel="noopener">GitHub</a>
+    {%- endif %}
+    {%- if include.project.links.project %}
+    <a href="{{ include.project.links.project }}" target="_blank" rel="noopener">Project</a>
+    {%- endif %}
+  </div>
+</section>

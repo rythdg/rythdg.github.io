@@ -12,6 +12,13 @@ kramdown:
 
 permalink: /posts/:title/
 
+# Research entries. Data only — projects are cards on /research/, not pages of
+# their own, so output is off. A project optionally points at a blog post via
+# its `post:` slug.
+collections:
+  projects:
+    output: false
+
 # Nav links, rendered in order by _includes/nav.html.
 nav:
   - name: Home

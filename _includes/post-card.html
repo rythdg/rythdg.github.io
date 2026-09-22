@@ -1,0 +1,12 @@
+{%- comment -%}
+One card on /blog/. Params: post — a document from site.posts.
+The whole card is a link to the post.
+Markup must stay in sync with the .blog-block rules in css/style.css.
+{%- endcomment -%}
+<a class="blog-block blog-block-link" href="{{ include.post.url | relative_url }}?from=blog">
+  <img class="block-thumb" src="{{ include.post.thumbnail | relative_url }}" alt="">
+  <div class="block-content">
+    <h2>{{ include.post.title }}</h2>
+    <p>{{ include.post.description }}</p>
+  </div>
+</a>
