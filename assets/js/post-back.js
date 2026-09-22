@@ -1,14 +1,14 @@
 (function () {
-  const params = new URLSearchParams(window.location.search);
-  const from = params.get("from");
   const link = document.getElementById("post-back");
   if (!link) return;
 
+  const from = new URLSearchParams(window.location.search).get("from");
+
   if (from === "research") {
-    link.href = "../research.html";
+    link.href = link.dataset.researchUrl;
     link.textContent = "← Back to Research";
   } else {
-    link.href = "../blog.html";
+    link.href = link.dataset.blogUrl;
     link.textContent = "← Back to Blog";
   }
 })();

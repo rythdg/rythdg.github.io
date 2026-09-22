@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+# Create a new post in _posts/ with front matter already filled in.
+#   ./bin/newpost "What Model Identifiability Actually Means"
+set -euo pipefail
+
+if [ $# -lt 1 ]; then
+  echo "usage: $0 \"Post Title\"" >&2
+  exit 1
+fi
+
+title="$1"
+root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+date="$(date +%Y-%m-%d)"
+
+slug="$(printf '%s' "$title" \
+  | tr '[:upper:]' '[:lower:]' \
+  | sed -e 's/[^a-z0-9]/-/g' -e 's/--*/-/g' -e 's/^-//' -e 's/-$//')"
+
+if [ -z "$slug" ]; then
+  echo "error: title produced an empty slug" >&2
+  exit 1
+fi
+
+file="$root/_posts/$date-$slug.md"
+
+if [ -e "$file" ]; then
+  echo "error: $file already exists" >&2
+  exit 1
+fi
+
+mkdir -p "$root/_posts"
+cat > "$file" <<EOF
+---
+title: "$title"
+date: $date
+description: "One or two sentences — the teaser shown on the Research and Blog cards."
+thumbnail: /assets/img/thumb-1.svg
+tags: []
+# links:
+#   publication: "https://doi.org/..."
+#   github: "https://github.com/rythdg/..."
+# references:
+#   - text: "Author, A. (2026). Title. Journal, 1(1), 1-10."
+#     url: "https://doi.org/..."
+---
+
+Opening paragraph.
+
+## A Section
+
+Body text.
+
+{% include figure.html src="/assets/img/thumb-1.svg" alt="Describe the figure" caption="Figure 1. What this shows." %}
+EOF
+
+echo "$file"

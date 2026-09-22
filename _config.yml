@@ -1,0 +1,41 @@
+title: Ryth Dasgupta
+author: Ryth Dasgupta
+email: dasgupta.ryth@gmail.com
+description: Computational biology, neural engineering, and AI.
+url: https://rythdg.github.io
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /posts/:title/
+
+# Nav links, rendered in order by _includes/nav.html.
+nav:
+  - name: Home
+    url: /
+  - name: About
+    url: /about/
+  - name: Research
+    url: /research/
+  - name: Blog
+    url: /blog/
+  - name: Contact
+    url: /contact/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - bin/
+  - vendor/
+  - .github/

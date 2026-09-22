@@ -1,33 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Ryth Dasgupta</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <h1>Contact</h1>
-    <p>Feel free to reach out through any of the channels below.</p>
+---
+layout: page
+title: Contact
+permalink: /contact/
+---
+<p>Feel free to reach out through any of the channels below.</p>
 
-    <ul class="contact-list">
-      <li><span class="contact-label">Email</span> <a href="mailto:dasgupta.ryth@gmail.com">dasgupta.ryth@gmail.com</a></li>
-      <li><span class="contact-label">GitHub</span> <a href="https://github.com/rythdg" target="_blank" rel="noopener">github.com/rythdg</a></li>
-      <li><span class="contact-label">CV</span> <a href="files/Ryth-Dasgupta-CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a></li>
-    </ul>
-  </main>
-  <footer>
-    <p>&copy; 2026 Ryth Dasgupta</p>
-  </footer>
-</body>
-</html>
+<ul class="contact-list">
+  <li><span class="contact-label">Email</span> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+  <li><span class="contact-label">GitHub</span> <a href="https://github.com/rythdg" target="_blank" rel="noopener">github.com/rythdg</a></li>
+  <li><span class="contact-label">CV</span> <a href="{{ '/files/Ryth-Dasgupta-CV.pdf' | relative_url }}" target="_blank" rel="noopener">Download CV (PDF)</a></li>
+</ul>

@@ -1,0 +1,10 @@
+{%- comment -%}
+Inline figure for a post body:
+  {% include figure.html src="/assets/img/thumb-1.svg" alt="..." caption="Figure 1. ..." %}
+{%- endcomment -%}
+<figure class="post-figure">
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}">
+  {%- if include.caption %}
+  <figcaption>{{ include.caption }}</figcaption>
+  {%- endif %}
+</figure>
