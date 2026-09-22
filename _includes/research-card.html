@@ -9,7 +9,9 @@ Markup must stay in sync with the .research-block rules in css/style.css.
   {%- assign linked_post = site.posts | where: "slug", include.project.post | first -%}
 {%- endif -%}
 <section class="research-block">
+  {%- if include.project.thumbnail %}
   <img class="block-thumb" src="{{ include.project.thumbnail | relative_url }}" alt="">
+  {%- endif %}
   <div class="block-content">
     <h2>{{ include.project.title }}</h2>
     <p>{{ include.project.description }}</p>

@@ -4,7 +4,9 @@ The whole card is a link to the post.
 Markup must stay in sync with the .blog-block rules in css/style.css.
 {%- endcomment -%}
 <a class="blog-block blog-block-link" href="{{ include.post.url | relative_url }}?from=blog">
+  {%- if include.post.thumbnail %}
   <img class="block-thumb" src="{{ include.post.thumbnail | relative_url }}" alt="">
+  {%- endif %}
   <div class="block-content">
     <h2>{{ include.post.title }}</h2>
     <p>{{ include.post.description }}</p>

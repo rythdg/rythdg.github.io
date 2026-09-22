@@ -33,12 +33,9 @@ cat > "$file" <<EOF
 ---
 title: "$title"
 date: $date
-description: "One or two sentences — the teaser shown on the Research and Blog cards."
-thumbnail: /assets/img/thumb-1.svg
+description: "One or two sentences — the teaser shown on the Blog card."
 tags: []
-# links:
-#   publication: "https://doi.org/..."
-#   github: "https://github.com/rythdg/..."
+# thumbnail: /assets/img/thumb-1.svg   # optional, card is text-only without it
 # references:
 #   - text: "Author, A. (2026). Title. Journal, 1(1), 1-10."
 #     url: "https://doi.org/..."
