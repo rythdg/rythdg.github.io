@@ -1,5 +1,5 @@
 ---
-title: "After a workout!"
+title: "On working after a workout"
 date: 2026-10-10
 description: "Workouts make people feel Energised. Revitalised. Refreshed even."
 tags: [fun]
