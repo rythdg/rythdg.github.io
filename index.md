@@ -1,30 +1,34 @@
 ---
 layout: page
-title: Home
+title: The depot
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Hello! Welcome to my internet footprint.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+My name is Ryth [like myth], and I struggle to explain what I do to my friends. This website is an attempt to get that out of the way for once and for all.
 
-## Section
+In a word, I am a computational neuroscientist at NCBS Bangalore, working on modelling synaptic signalling using high-throughput data and auto-extracted experimental data from the literature.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+- If you are here to hire me, perhaps the [Research](/research/) page would be the most relevant section to head to.
+- Suddenly chanced upon time and boredom? Here are some [blogs](/blog/) I've written.
+- You swear you had saved my phone number but for some reason can't find it right now? [Contact me](/contact/) this way instead.
 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+## Professionally
 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.
+I am interested in building tools and models to understand multi-scale emergent phenomena in the brain.
 
-## Another Section
+Currently, I am working at the Bhalla Lab, and my research involves creating large network models for synaptic signalling, to understand how Aging, and neurodegenerative diseases such as Alzheimer's and Dementia, affect the cellular and intracellular signalling capabilities for humans. I have recently developed an AI-integrated pipeline to reliably extract experimental information from literature such that they can be directly simulated on the model, to test model-fits at scale.
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+Before this, I worked at the University of Montreal and in IISER Pune on the biophysics of bacterial morphology, and at the University of Waterloo on human metabolic homeostasis. (More in [Research](/research/).)
 
-Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.
+I am also a co-founder at MindLink, where I use my experience working with integrated AI pipelines and modelling large-scale emergent properties to build a market-research tool centred around data-ownership. Of course they all say it - but it's a game changer for brands. Trust me though, I am a scientist ;)
 
-Quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+## Personally
 
-## Closing Thoughts
+I am best known amongst my friends as Bollywood megastar Ranveer Singh's body double.
 
-Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.
+In 2025, I played one of the most important characters in a ground breaking TV Ad for sofas as Ranveer Singh's hands. I had the difficult and nuanced job of gently caressing furniture for about 12 hours on set. The director said I am a natural.
 
-Ut aliquid ex ea commodi consequatur, quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+It is a constant battle to justify to my friends why I gave up this seismic career path in favour of science.
+
+Less excitingly, I was born in Mumbai, and love the beach during low tides; I used to play the guitar, can still sometimes pretend to play it; I love the idea of having an identifiable writing voice, which I hope to develop here.
