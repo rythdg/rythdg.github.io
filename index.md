@@ -21,7 +21,7 @@ Currently, I am working at the Bhalla Lab, and my research involves creating lar
 
 Before this, I worked at the University of Montreal and in IISER Pune on the biophysics of bacterial morphology, and at the University of Waterloo on human metabolic homeostasis. (More in [Research](/research/).)
 
-I am also a co-founder at MindLink, where I use my experience working with integrated AI pipelines and modelling large-scale emergent properties to build a market-research tool centred around data-ownership. Of course they all say it - but it's a game changer for brands. Trust me though, I am a scientist ;)
+I am also a co-founder at MindLink, where I use my experience working with integrated AI pipelines and modelling large-scale emergent properties to build a market-research tool centred around data-ownership. MindLink is a game changer for brands, in a very exciting period in the marketing tech industry.
 
 ## Personally
 
