@@ -23,8 +23,6 @@ collections:
 nav:
   - name: Home
     url: /
-  - name: About
-    url: /about/
   - name: Research
     url: /research/
   - name: Blog

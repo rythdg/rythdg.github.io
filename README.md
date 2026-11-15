@@ -30,7 +30,7 @@ trick, the project↔post slug link, why projects have no pages).
 | Add a research project | [§4](#4-add-a-research-project) | `_projects/` |
 | Reorder / edit / delete research projects | [§5](#5-reorder-edit-or-delete-projects) | `_projects/` |
 | Link a research project to a blog post | [§6](#6-link-a-project-to-a-blog-post) | the project file |
-| Change Home or About text | [§7](#7-home-and-about) | `index.md`, `about.md` |
+| Change Home text | [§7](#7-home) | `index.md` |
 | Change contact details or swap the CV | [§8](#8-contact-details-and-cv) | `contact.html`, `files/` |
 | Change the Research/Blog intro sentence | [§9](#9-the-researchblog-intro-sentences) | `research.html`, `blog.html` |
 | Change the nav bar, site title, or footer | [§10](#10-nav-bar-site-title-footer) | `_config.yml` |
@@ -239,9 +239,9 @@ To relate several posts to one project, point `post:` at the main one and
 cross-reference the rest in the post bodies. The card's link column is kept
 deliberately short.
 
-## 7. Home and About
+## 7. Home
 
-`index.md` and `about.md` — plain Markdown, just edit the text. Blank lines
+`index.md` — plain Markdown, just edit the text. Blank lines
 separate paragraphs; `##` makes a section heading.
 
 The `title:` in the front matter is the page's `<h1>`. Home's is currently
@@ -284,8 +284,6 @@ email: dasgupta.ryth@gmail.com   # used by contact.html
 nav:                        # the nav bar — order here is order on screen
   - name: Home
     url: /
-  - name: About
-    url: /about/
 ```
 
 - **Nav bar:** add, remove, reorder, or relabel entries under `nav:`. It's one
@@ -425,7 +423,6 @@ _posts/               BLOG POSTS — one Markdown file each           (§1)
 _projects/            RESEARCH ENTRIES — front matter only          (§4)
 
 index.md              Home                                         (§7)
-about.md              About                                        (§7)
 research.html         Research listing — intro + card loop          (§9)
 blog.html             Blog listing — intro + card loop              (§9)
 contact.html          Contact details                              (§8)
