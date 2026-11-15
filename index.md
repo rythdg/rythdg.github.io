@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The depot
+title: Home
 ---
 
 Hello! Welcome to my internet footprint.
@@ -21,13 +21,13 @@ Currently, I am working at the Bhalla Lab, and my research involves creating lar
 
 Before this, I worked at the University of Montreal and in IISER Pune on the biophysics of bacterial morphology, and at the University of Waterloo on human metabolic homeostasis. (More in [Research](/research/).)
 
-I am also a co-founder at MindLink, where I use my experience working with integrated AI pipelines and modelling large-scale emergent properties to build a market-research tool centred around data-ownership. MindLink is a game changer for brands, in a very exciting period in the marketing tech industry.
+I am also a co-founder at MindLink, where I use my experience working with integrated AI pipelines and modelling large-scale emergent properties to build a market-research tool centred around data-ownership. Decision makers usually find themselves in an ivory tower despite their best intentions. However, good communication with customers needs strong insights on what the people are currently feeling. MindLink is an infrastructure for scalable quizzes that bridges this gap, capable of thousands of responses within days. 
 
 ## Personally
 
 I am best known amongst my friends as Bollywood megastar Ranveer Singh's body double.
 
-In 2025, I played one of the most important characters in a ground breaking TV Ad for sofas as Ranveer Singh's hands. I had the difficult and nuanced job of gently caressing furniture for about 12 hours on set. The director said I am a natural.
+In 2025, I played one of the most important characters in a ground breaking [TV Ad for sofas](https://www.youtube.com/watch?v=spdVH6Lqnr0) as Ranveer Singh's hands. I had the difficult and nuanced job of gently caressing furniture for about 12 hours on set. The director said I am a natural.
 
 It is a constant battle to justify to my friends why I gave up this seismic career path in favour of science.
 
