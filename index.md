@@ -9,7 +9,7 @@ My name is Ryth [like myth], and I struggle to explain what I do to my friends. 
 
 In a word, I am a computational neuroscientist at NCBS Bangalore, working on modelling synaptic signalling using high-throughput data and auto-extracted experimental data from the literature.
 
-- If you are here to hire me, perhaps the [Research](/research/) page would be the most relevant section to head to.
+- Here to hire me? Perhaps the [Research](/research/) page would be the most relevant section to head to.
 - Suddenly chanced upon time and boredom? Here are some [blogs](/blog/) I've written.
 - You swear you had saved my phone number but for some reason can't find it right now? [Contact me](/contact/) this way instead.
 
