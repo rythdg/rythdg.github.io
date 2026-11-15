@@ -2,7 +2,7 @@
 title: "After a workout!"
 date: 2026-10-10
 description: "Workouts make people feel energised. Revitalised. Refreshed."
-tags: []
+tags: [fun]
 
 ---
 
