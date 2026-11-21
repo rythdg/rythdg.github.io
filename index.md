@@ -3,7 +3,7 @@ layout: page
 title: Home
 ---
 
-Hello! Welcome to my internet footprint.
+Hello! Welcome to my digital footprint.
 
 My name is Ryth [like myth], and I struggle to explain what I do to my friends. This website is an attempt to get that out of the way for once and for all.
 
