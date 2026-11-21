@@ -1,5 +1,5 @@
 --- 
-title: "MindLink: studying belief systems at scale" 
+title: "Studying belief systems at scale" 
 
 order: 2 
 
