@@ -12,4 +12,5 @@ there common threads?"
 thumbnail: /assets/img/MindLink_Saltinc_Logo.jpeg
 
 links:
-  website: "https://saltmindlink.com/" ---
+  website: "https://saltmindlink.com/"
+---
