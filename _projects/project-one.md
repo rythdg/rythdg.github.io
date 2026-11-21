@@ -1,10 +1,17 @@
 ---
-title: "How much enzyme can A. brasilense make?"
+title: "Hydrazome: Protecting crops from floods"
 order: 10
-description: "Due to floods and heavy rainfall, a large proportion of crops in India are affected. The project at large was to use a naturally occurring soil bacterium, Azospirillum brasilense, to combat the negative effects of water-logging on crops. As dry-lab lead, our job was to use computational modelling to optimize the efficiency of our genetically engineered strain, and comment on its usability. (iGEM 2022, IISER Pune)"
-thumbnail: /assets/img/thumb-1.svg
+description: "
+Water-logging and flooding affects up to 30% of crop yield in India. Most crops begin to wilt under water-logged conditions within a day, and die after about 3 days. This happens because of hypoxia-driven over-production of ethylene in the roots. We genetically modified a naturally occurring soil bacterium Azospirillum _brasilense_, to be able to break-down ethylene precursors in the roots of plants in response to hypoxia, alleviating the toxic levels of ethylene, and extending crop-life.
+
+This project was part of the International Genetically Engineered Machines (iGEM) competition.
+Our team won the Gold Medal at the main even in Paris in 2022!"
+
+
+thumbnail: /assets/img/igem-logo.png
+
+
 post: project-one
 links:
-  publication: "#"
-  github: "#"
+  Website: "https://2022.igem.wiki/iiser-pune-india/"
 ---
