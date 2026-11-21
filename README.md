@@ -174,7 +174,7 @@ post: what-model-identifiability-actually-means   # optional, see §6
 links:                                            # all keys optional
   publication: "https://doi.org/10.xxxx/xxxxx"
   github: "https://github.com/rythdg/reach-decoder"
-  project: "https://example.org/demo"
+  website: "https://example.org"
 ---
 ```
 
@@ -188,7 +188,7 @@ links:                                            # all keys optional
 | `links` | no | The card's right-hand link column |
 
 **`links` only renders the keys you actually provide.** Recognized keys are
-`publication`, `github`, and `project` — so a project with no paper yet just
+`publication`, `github`, and `website` — so a project with no paper yet just
 omits `publication` and shows fewer links. Nothing needs to be disabled.
 
 If you want a project to have a real write-up page, that's a blog post
