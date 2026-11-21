@@ -9,8 +9,8 @@ behaviours in those industries. Such as, how do people approach the purchase
 of instant noodles, and how is that different from people's approaches to 
 buying cars? What is it that fundamentally differentiates these, and are 
 there common threads?" 
-thumbnail: /assets/img/MindLink_Saltinc_Logo.jpeg
+thumbnail: /assets/img/mindlink-logo.png
 
 links:
-  website: "https://saltmindlink.com/"
+  website: "https://saltmindlink.com/Research"
 ---
