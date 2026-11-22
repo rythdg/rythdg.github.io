@@ -10,4 +10,5 @@ After many months of observation, and now again after a brief haitus, I conclude
 
 Today was leg day, and my legs feel as fresh as overcooked rice noodles. 
 
-A shower and a nap are the only things that can sustain on my schedule after a work out. Is this an aquired skill? 
+My options reduce to showering, eating and napping post work-outs. 
+Am I missing something?

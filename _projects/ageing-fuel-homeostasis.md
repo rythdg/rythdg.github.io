@@ -1,6 +1,6 @@
 ---
 title: "Fuel homeostasis during exercise in ageing men"
-order: 5
+order: 50
 pi: "Prof. Anita Layton"
 pi_url: "https://uwaterloo.ca/layton-group/"
 organisation: "University of Waterloo"

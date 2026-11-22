@@ -28,7 +28,12 @@ if [ -e "$file" ]; then
 fi
 
 mkdir -p "$root/_projects"
-next_order=$(( $(ls -1 "$root/_projects" 2>/dev/null | grep -c '\.md$') + 1 ))
+# Place the new project last: highest existing order + 10 (projects are
+# numbered in tens so others can be slotted in between).
+max_order=$(cat "$root"/_projects/*.md 2>/dev/null \
+  | sed -n -E 's/^order:[[:space:]]*([0-9]+)[[:space:]]*$/\1/p' \
+  | sort -n | tail -1)
+next_order=$(( ${max_order:-0} + 10 ))
 
 cat > "$file" <<EOF
 ---

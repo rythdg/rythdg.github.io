@@ -184,7 +184,7 @@ links:                                            # all keys optional
 | Field | Required? | What it does |
 |---|---|---|
 | `title` | **yes** | Card heading |
-| `order` | **yes** | Position on the page, ascending — `1` is first. `newproject` assigns the next number |
+| `order` | **yes** | Position on the page, ascending. Number in tens (`10`, `20`, …); `newproject` assigns the highest existing number + 10 |
 | `description` | **yes** | The card teaser. Inline HTML allowed (e.g. `<em>` for species names); a blank line inside the quotes starts a new paragraph |
 | `pi` | no | Supervisor's name. Shown as "Lab of …" in grey under the title |
 | `pi_url` | no | Makes the `pi` name a quiet link (faint underline, darkens on hover) |

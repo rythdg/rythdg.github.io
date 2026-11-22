@@ -1,6 +1,6 @@
 ---
 title: "Coarse-grained simulation of bacterial cell-width control"
-order: 3
+order: 30
 pi: "Prof. Sven van Teeffelen"
 pi_url: "https://vanteeffelenlab.org/"
 organisation: "Université de Montréal"

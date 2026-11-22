@@ -1,7 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
+/* Site colours. Links are grey (--link) and turn --accent on hover; text
+   selection and other highlights also use --accent. Change them here to
+   re-colour the whole site. */
+:root {
+  --accent: #A00000;
+  --link: #767676;
+}
+
 * {
   box-sizing: border-box;
+}
+
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+/* Every link in the page body: grey with a faint underline, accent on hover. */
+main a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: #d6d6d6;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+main a:hover,
+main a:focus-visible {
+  color: var(--accent);
+  text-decoration-color: currentColor;
 }
 
 body {
@@ -22,17 +51,20 @@ header nav {
 }
 
 header nav a {
-  color: inherit;
+  color: var(--link);
   text-decoration: none;
   font-weight: 700;
+  transition: color 0.15s ease;
 }
 
 header nav a:hover {
+  color: var(--accent);
   text-decoration: underline;
 }
 
+/* 700px of text plus 1.5rem padding each side. */
 main {
-  max-width: 680px;
+  max-width: 748px;
   margin: 0 auto;
   padding: 2.5rem 1.5rem;
 }
@@ -116,38 +148,37 @@ main p {
   color: #767676;
 }
 
-.block-affiliation a {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-color: #d6d6d6;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  transition: color 0.15s ease, text-decoration-color 0.15s ease;
-}
-
-.block-affiliation a:hover,
-.block-affiliation a:focus-visible {
-  color: #222222;
-  text-decoration-color: currentColor;
-}
-
 .block-affiliation .sep {
   margin: 0 0.45em;
   color: #b5b5b5;
 }
 
-.block-links {
+/* Research card's left column: thumbnail, then its links stacked beneath. */
+.block-aside {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  text-align: right;
+  width: 90px;
   flex-shrink: 0;
 }
 
+.block-aside .block-thumb {
+  width: 100%;
+}
+
+/* Two lines of link text (2 × 0.875rem × 1.6 line-height) between the
+   thumbnail and the links under it. */
+.block-thumb + .block-links {
+  margin-top: 2.8rem;
+}
+
+.block-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
 .block-links a {
-  color: inherit;
-  font-size: 0.9rem;
-  text-decoration: underline;
+  font-size: 0.875rem;
   white-space: nowrap;
 }
 
@@ -156,8 +187,14 @@ main p {
   text-decoration: none;
 }
 
+/* A whole blog card is one link: keep its text black rather than link grey. */
 .blog-block-link:hover {
+  color: inherit;
   background: #fafafa;
+}
+
+.blog-block-link:hover h2 {
+  color: var(--accent);
 }
 
 @media (max-width: 600px) {
@@ -166,7 +203,8 @@ main p {
     flex-direction: column;
   }
 
-  .block-thumb {
+  .block-thumb,
+  .block-aside {
     width: 100%;
     max-width: 240px;
   }
@@ -174,14 +212,13 @@ main p {
   .block-links {
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: left;
+    gap: 0.25rem 1rem;
   }
 }
 
 .post-back {
   display: inline-block;
   margin-bottom: 1.5rem;
-  color: inherit;
   font-size: 0.9rem;
 }
 
@@ -212,10 +249,6 @@ main p {
 .references-list li {
   margin-bottom: 0.6rem;
   text-align: left;
-}
-
-.references-list a {
-  color: inherit;
 }
 
 footer {

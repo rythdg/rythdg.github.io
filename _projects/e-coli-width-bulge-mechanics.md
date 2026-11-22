@@ -1,6 +1,6 @@
 ---
 title: "Mechanics of E. coli cell width homeostasis and bulge dynamics"
-order: 4
+order: 40
 pi: "Prof. Chaitanya Athale"
 pi_url: "https://sites.iiserpune.ac.in/~cathale/"
 organisation: "IISER Pune"

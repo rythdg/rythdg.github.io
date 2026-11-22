@@ -9,6 +9,10 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  # A single Enter in a page or post starts a new line (like a word processor)
+  # instead of being joined onto the previous line. A blank line still starts
+  # a new paragraph.
+  hard_wrap: true
 
 permalink: /posts/:title/
 

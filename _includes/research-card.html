@@ -8,9 +8,35 @@ Markup must stay in sync with the .research-block rules in css/style.css.
 {%- if include.project.post -%}
   {%- assign linked_post = site.posts | where: "slug", include.project.post | first -%}
 {%- endif -%}
+{%- capture card_links -%}
+    {%- if linked_post %}
+      <a href="{{ linked_post.url | relative_url }}?from=research" target="_blank" rel="noopener">Blog Post</a>
+    {%- endif %}
+    {%- if include.project.links.publication %}
+      <a href="{{ include.project.links.publication }}" target="_blank" rel="noopener">Publication</a>
+    {%- endif %}
+    {%- if include.project.links.github %}
+      <a href="{{ include.project.links.github }}" target="_blank" rel="noopener">GitHub</a>
+    {%- endif %}
+    {%- if include.project.links.website %}
+      <a href="{{ include.project.links.website }}" target="_blank" rel="noopener">Website</a>
+    {%- endif %}
+{%- endcapture -%}
+{%- assign card_links = card_links | strip -%}
 <section class="research-block">
-  {%- if include.project.thumbnail %}
-  <img class="block-thumb" src="{{ include.project.thumbnail | relative_url }}" alt="">
+  {%- comment -%} Left column: thumbnail with the card's links stacked under it.
+  Omitted entirely when a card has neither. {%- endcomment -%}
+  {%- if include.project.thumbnail or card_links != "" %}
+  <div class="block-aside">
+    {%- if include.project.thumbnail %}
+    <img class="block-thumb" src="{{ include.project.thumbnail | relative_url }}" alt="">
+    {%- endif %}
+    {%- if card_links != "" %}
+    <div class="block-links">
+      {{ card_links }}
+    </div>
+    {%- endif %}
+  </div>
   {%- endif %}
   <div class="block-content">
     <h2>{{ include.project.title }}</h2>
@@ -31,19 +57,5 @@ Markup must stay in sync with the .research-block rules in css/style.css.
     {%- capture newline %}
 {% endcapture %}
     <p>{{ include.project.description | strip | replace: newline, "</p><p>" }}</p>
-  </div>
-  <div class="block-links">
-    {%- if linked_post %}
-    <a href="{{ linked_post.url | relative_url }}?from=research" target="_blank" rel="noopener">Blog Post</a>
-    {%- endif %}
-    {%- if include.project.links.publication %}
-    <a href="{{ include.project.links.publication }}" target="_blank" rel="noopener">Publication</a>
-    {%- endif %}
-    {%- if include.project.links.github %}
-    <a href="{{ include.project.links.github }}" target="_blank" rel="noopener">GitHub</a>
-    {%- endif %}
-    {%- if include.project.links.website %}
-    <a href="{{ include.project.links.website }}" target="_blank" rel="noopener">Website</a>
-    {%- endif %}
   </div>
 </section>

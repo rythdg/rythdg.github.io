@@ -1,7 +1,7 @@
 --- 
 title: "Studying belief systems at scale" 
 
-order: 2 
+order: 20
 organisation: "The Salt Inc."
 
 description: "MindLink is a tool to study extremely large-scale effects of 
