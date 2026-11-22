@@ -6,4 +6,6 @@ pi_url: "https://vanteeffelenlab.org/"
 organisation: "Université de Montréal"
 thumbnail: /assets/img/2DPG.png
 description: "Rod-shaped bacteria hold width homeostatically within about 5% despite high turgor pressure, using enzymes far smaller than the cell. The goal was to learn the molecular mechanisms of how they coordinate to reduce, maintain and restore width. (Master's thesis)"
+links:
+  abstract: "https://www.cell.com/biophysj/fulltext/S0006-3495(24)01522-4"
 ---

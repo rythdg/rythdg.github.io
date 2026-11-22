@@ -15,6 +15,9 @@ Markup must stay in sync with the .research-block rules in css/style.css.
     {%- if include.project.links.publication %}
       <a href="{{ include.project.links.publication }}" target="_blank" rel="noopener">Publication</a>
     {%- endif %}
+    {%- if include.project.links.abstract %}
+      <a href="{{ include.project.links.abstract }}" target="_blank" rel="noopener">Conference Abstract</a>
+    {%- endif %}
     {%- if include.project.links.github %}
       <a href="{{ include.project.links.github }}" target="_blank" rel="noopener">GitHub</a>
     {%- endif %}

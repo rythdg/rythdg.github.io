@@ -176,6 +176,7 @@ thumbnail: /assets/img/reach-decoding.png
 post: what-model-identifiability-actually-means   # optional, see §6
 links:                                            # all keys optional
   publication: "https://doi.org/10.xxxx/xxxxx"
+  abstract: "https://example.org/conference-abstract"
   github: "https://github.com/rythdg/reach-decoder"
   website: "https://example.org"
 ---
@@ -191,10 +192,11 @@ links:                                            # all keys optional
 | `organisation` | no | Institute or company, shown after the PI as "· …", or alone if there's no `pi` |
 | `thumbnail` | no | Card image; text-only card without it |
 | `post` | no | Slug of a post in `_posts/`, adds a "Blog Post" link ([§6](#6-link-a-project-to-a-blog-post)) |
-| `links` | no | The card's right-hand link column |
+| `links` | no | Links listed under the card's thumbnail |
 
 **`links` only renders the keys you actually provide.** Recognized keys are
-`publication`, `github`, and `website` — so a project with no paper yet just
+`publication`, `abstract` (shown as "Conference Abstract"), `github`, and
+`website` — so a project with no paper yet just
 omits `publication` and shows fewer links. Nothing needs to be disabled.
 
 If you want a project to have a real write-up page, that's a blog post

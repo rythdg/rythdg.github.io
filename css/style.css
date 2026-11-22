@@ -177,9 +177,11 @@ main p {
   gap: 0.25rem;
 }
 
+/* Links may wrap: longer labels like "Conference Abstract" don't fit the
+   90px column on one line. */
 .block-links a {
   font-size: 0.875rem;
-  white-space: nowrap;
+  line-height: 1.35;
 }
 
 .blog-block-link {
