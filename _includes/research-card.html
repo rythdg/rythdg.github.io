@@ -14,7 +14,23 @@ Markup must stay in sync with the .research-block rules in css/style.css.
   {%- endif %}
   <div class="block-content">
     <h2>{{ include.project.title }}</h2>
-    <p>{{ include.project.description }}</p>
+    {%- comment -%} Affiliation line: "Lab of <PI> · <organisation>". Either
+    part may be omitted; the PI's name links to pi_url when one is given.
+    {%- endcomment -%}
+    {%- if include.project.pi or include.project.organisation %}
+    <p class="block-affiliation">
+      {%- if include.project.pi -%}
+        Lab of {% if include.project.pi_url %}<a href="{{ include.project.pi_url }}" target="_blank" rel="noopener">{{ include.project.pi }}</a>{% else %}{{ include.project.pi }}{% endif %}
+      {%- endif -%}
+      {%- if include.project.pi and include.project.organisation %}<span class="sep" aria-hidden="true">·</span>{% endif -%}
+      {{- include.project.organisation -}}
+    </p>
+    {%- endif %}
+    {%- comment -%} A blank line inside the quoted YAML description becomes a
+    newline; render each one as a paragraph break. {%- endcomment -%}
+    {%- capture newline %}
+{% endcapture %}
+    <p>{{ include.project.description | strip | replace: newline, "</p><p>" }}</p>
   </div>
   <div class="block-links">
     {%- if linked_post %}

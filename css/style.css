@@ -103,6 +103,39 @@ main p {
   margin: 0;
 }
 
+.block-content p + p {
+  margin-top: 0.5rem;
+}
+
+/* "Lab of <PI> · <organisation>" line under a research card title. Quiet by
+   design: grey text, and the PI link only hints at itself with a faint
+   underline until hovered. */
+.block-content .block-affiliation {
+  margin: -0.3rem 0 0.6rem;
+  font-size: 0.875rem;
+  color: #767676;
+}
+
+.block-affiliation a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #d6d6d6;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.block-affiliation a:hover,
+.block-affiliation a:focus-visible {
+  color: #222222;
+  text-decoration-color: currentColor;
+}
+
+.block-affiliation .sep {
+  margin: 0 0.45em;
+  color: #b5b5b5;
+}
+
 .block-links {
   display: flex;
   flex-direction: column;

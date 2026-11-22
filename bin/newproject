@@ -34,6 +34,9 @@ cat > "$file" <<EOF
 ---
 title: "$title"
 order: $next_order
+# pi: "Prof. Jane Doe"                  # optional, "Lab of …" under the title
+# pi_url: "https://example.org/doe-lab"  # optional, links the PI's name
+# organisation: "University of Somewhere"
 description: "One or two sentences — the teaser shown on the Research card."
 thumbnail: /assets/img/thumb-1.svg
 # post: the-slug-of-a-post-in-_posts   # optional, adds a "Blog Post" link
